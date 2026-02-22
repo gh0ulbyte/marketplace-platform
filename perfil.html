@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil - mandale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo">
+                    <img src="logo.png" alt="mandale" class="logo-img" style="height: 30px;">
+                </a>
+            </div>
+            <div class="user-section">
+                <a href="index.html" class="user-link">Inicio</a>
+                <a href="publicar-producto.html" class="user-link">Publicar producto</a>
+                <button class="user-link" id="logoutBtn" style="border: none; background: none; cursor: pointer;">Cerrar sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="max-width: 1000px; margin: 40px auto; padding: 20px;">
+        <h1 style="margin-bottom: 30px;">Mi perfil</h1>
+
+        <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="datos">Mis datos</button>
+            <button class="tab-btn" data-tab="productos">Mis productos</button>
+            <button class="tab-btn" data-tab="billeteras">Billeteras</button>
+        </div>
+
+        <!-- Tab: Datos personales -->
+        <div class="tab-content active" id="datos-tab">
+            <div class="auth-box">
+                <h2>Datos personales</h2>
+                <div id="userData" class="user-info">
+                    <p>Cargando...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Mis productos -->
+        <div class="tab-content" id="productos-tab">
+            <div class="auth-box">
+                <h2>Mis productos publicados</h2>
+                <div id="myProducts" class="products-list">
+                    <p>Cargando...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Billeteras -->
+        <div class="tab-content" id="billeteras-tab">
+            <div class="auth-box">
+                <h2>Conectar billeteras virtuales</h2>
+                <p style="margin-bottom: 20px;">Conectá tus billeteras para recibir pagos</p>
+                
+                <div id="walletsContainer" class="wallets-container">
+                    <!-- Se cargará dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="perfil.js"></script>
+</body>
+</html>
+

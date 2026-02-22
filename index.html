@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mandale - Donde comprar y vender de todo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="#" class="logo">
+                    <img src="logo.png" alt="mandale" class="logo-img">
+                </a>
+            </div>
+            <div class="search-section">
+                <form class="search-form" action="#" method="get">
+                    <input type="text" class="search-input" placeholder="Buscar productos, marcas y más..." autocomplete="off">
+                    <button type="submit" class="search-button">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="user-section">
+                <a href="login.html" class="user-link" id="loginLink">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 10C12.7614 10 15 7.76142 15 5C15 2.23858 12.7614 0 10 0C7.23858 0 5 2.23858 5 5C5 7.76142 7.23858 10 10 10Z" fill="currentColor"/>
+                        <path d="M10 12C5.58172 12 2 13.7909 2 16V20H18V16C18 13.7909 14.4183 12 10 12Z" fill="currentColor"/>
+                    </svg>
+                    <span>Ingresá</span>
+                </a>
+                <a href="publicar-producto.html" class="user-link" id="venderLink" style="display: none;">
+                    <span>Vender</span>
+                </a>
+                <a href="perfil.html" class="user-link" id="perfilLink" style="display: none;">
+                    <span>Mi cuenta</span>
+                </a>
+                <a href="#" class="cart-link">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M1 1H3L3.4 3M5 11H15L19 5H4M5 11L3.4 3M5 11L2.70711 13.2929C2.07714 13.9229 2.52331 15 3.41421 15H15M15 15C13.8954 15 13 15.8954 13 17C13 18.1046 13.8954 19 15 19C16.1046 19 17 18.1046 17 17C17 15.8954 16.1046 15 15 15ZM9 17C9 18.1046 8.10457 19 7 19C5.89543 19 5 18.1046 5 17C5 15.8954 5.89543 15 7 15C8.10457 15 9 15.8954 9 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#" class="nav-link">Categorías</a>
+                <a href="#" class="nav-link">Ofertas</a>
+                <a href="#" class="nav-link">Historial</a>
+                <a href="#" class="nav-link">Supermercado</a>
+                <a href="#" class="nav-link">Moda</a>
+                <a href="publicar-producto.html" class="nav-link" id="venderNavLink">Vender</a>
+                <a href="#" class="nav-link">Ayuda</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Banner -->
+        <section class="hero-banner">
+            <div class="banner-content">
+                <h1>🔥 Mandale ya</h1>
+                <p>Vende sin comisiones.</p>
+                <button class="btn-primary">Explorar productos</button>
+            </div>
+        </section>
+
+        <!-- Quick Access Cards -->
+        <section class="quick-access">
+            <div class="container">
+                <div class="card-grid">
+                    <div class="access-card">
+                        <div class="card-icon">🚚</div>
+                        <h3>Envío gratis</h3>
+                        <p>Beneficio por ser tu primera compra.</p>
+                        <a href="#" class="card-link">Ver productos</a>
+                    </div>
+                    <div class="access-card">
+                        <div class="card-icon">👤</div>
+                        <h3>Ingresá a tu cuenta</h3>
+                        <p>Disfrutá de ofertas y comprá sin límites.</p>
+                        <a href="#" class="card-link">Ingresar</a>
+                    </div>
+                    <div class="access-card">
+                        <div class="card-icon">📍</div>
+                        <h3>Ingresá tu ubicación</h3>
+                        <p>Consultá costos y tiempos de entrega.</p>
+                        <a href="#" class="card-link">Ingresar ubicación</a>
+                    </div>
+                    <div class="access-card">
+                        <div class="card-icon">💳</div>
+                        <h3>Medios de pago</h3>
+                        <p>Pagá tus compras de forma rápida y segura.</p>
+                        <a href="#" class="card-link">Conocer medios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Categorías</h2>
+                <div class="categories-grid">
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🚗</div>
+                        <span>Autos, Motos y Otros</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🏠</div>
+                        <span>Hogar, Muebles y Jardín</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">📱</div>
+                        <span>Celulares y Teléfonos</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">👕</div>
+                        <span>Ropa y Accesorios</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">💻</div>
+                        <span>Computación</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">❄️</div>
+                        <span>Electrodomésticos</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">⚽</div>
+                        <span>Deportes y Fitness</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🏢</div>
+                        <span>Inmuebles</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🔧</div>
+                        <span>Herramientas</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">💄</div>
+                        <span>Belleza y Cuidado Personal</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🎵</div>
+                        <span>Electrónica, Audio y Video</span>
+                    </a>
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🎮</div>
+                        <span>Consolas y Videojuegos</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Más vendidos</h2>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Section -->
+        <section class="offers">
+            <div class="container">
+                <h2 class="section-title">Ofertas destacadas</h2>
+                <div class="offers-grid">
+                    <div class="offer-card">
+                        <div class="offer-badge">Hasta 35% OFF</div>
+                        <h3>En Deportes</h3>
+                        <p>6x sin interés</p>
+                        <button class="btn-secondary">Ver ofertas</button>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">Hasta 35% OFF</div>
+                        <h3>Equipá tu Hogar</h3>
+                        <p>6x sin interés</p>
+                        <button class="btn-secondary">Ver ofertas</button>
+                    </div>
+                    <div class="offer-card">
+                        <div class="offer-badge">Miles de ofertas</div>
+                        <h3>Compra en hasta</h3>
+                        <p>12x sin interés</p>
+                        <button class="btn-secondary">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Acerca de</h4>
+                    <ul>
+                        <li><a href="#">mandale</a></li>
+                        <li><a href="#">Investor relations</a></li>
+                        <li><a href="#">Tendencias</a></li>
+                        <li><a href="#">Sustentabilidad</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Otros sitios</h4>
+                    <ul>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Mercado Pago</a></li>
+                        <li><a href="#">Mercado Shops</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Mercado Ads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Comprar</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Resolución de problemas</a></li>
+                        <li><a href="#">Centro de seguridad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes sociales</h4>
+                    <ul>
+                        <li><a href="#">X</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2026 mandale. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Trabajá con nosotros</a>
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Cómo cuidamos tu privacidad</a>
+                    <a href="#">Ayuda</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

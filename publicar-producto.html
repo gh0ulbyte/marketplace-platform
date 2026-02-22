@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar producto - mandale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <a href="index.html" class="logo">
+                    <img src="logo.png" alt="mandale" class="logo-img" style="height: 30px;">
+                </a>
+            </div>
+            <div class="user-section">
+                <a href="index.html" class="user-link">Volver al inicio</a>
+                <a href="perfil.html" class="user-link" id="perfilLink" style="display: none;">Mi perfil</a>
+                <button class="user-link" id="logoutBtn" style="display: none; border: none; background: none; cursor: pointer;">Cerrar sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="max-width: 800px; margin: 40px auto; padding: 20px;">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h2>Publicar un producto</h2>
+                <p>Completá los datos de tu producto</p>
+            </div>
+
+            <form id="productForm" class="auth-form">
+                <div class="form-group">
+                    <label for="titulo">Título del producto *</label>
+                    <input type="text" id="titulo" name="titulo" required placeholder="Ej: iPhone 15 Pro Max 256GB">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción *</label>
+                    <textarea id="descripcion" name="descripcion" required rows="5" placeholder="Describe tu producto en detalle..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="precio">Precio (ARS) *</label>
+                        <input type="number" id="precio" name="precio" required min="0" step="0.01" placeholder="0.00">
+                    </div>
+
+                    <div class="form-group" style="flex: 1;">
+                        <label for="stock">Stock *</label>
+                        <input type="number" id="stock" name="stock" required min="1" value="1">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="pesoKg">Peso (kg)</label>
+                        <input type="number" id="pesoKg" name="pesoKg" min="0" step="0.01" placeholder="Ej: 1.50">
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="altoCm">Alto (cm)</label>
+                        <input type="number" id="altoCm" name="altoCm" min="0" step="0.1" placeholder="Ej: 10">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="anchoCm">Ancho (cm)</label>
+                        <input type="number" id="anchoCm" name="anchoCm" min="0" step="0.1" placeholder="Ej: 20">
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="largoCm">Largo (cm)</label>
+                        <input type="number" id="largoCm" name="largoCm" min="0" step="0.1" placeholder="Ej: 30">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="categoria">Categoría *</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccionar categoría</option>
+                            <option value="Celulares y Teléfonos">Celulares y Teléfonos</option>
+                            <option value="Computación">Computación</option>
+                            <option value="Electrodomésticos">Electrodomésticos</option>
+                            <option value="Electrónica, Audio y Video">Electrónica, Audio y Video</option>
+                            <option value="Hogar, Muebles y Jardín">Hogar, Muebles y Jardín</option>
+                            <option value="Ropa y Accesorios">Ropa y Accesorios</option>
+                            <option value="Deportes y Fitness">Deportes y Fitness</option>
+                            <option value="Consolas y Videojuegos">Consolas y Videojuegos</option>
+                            <option value="Herramientas">Herramientas</option>
+                            <option value="Belleza y Cuidado Personal">Belleza y Cuidado Personal</option>
+                            <option value="Autos, Motos y Otros">Autos, Motos y Otros</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="flex: 1;">
+                        <label for="condicion">Condición *</label>
+                        <select id="condicion" name="condicion" required>
+                            <option value="Nuevo">Nuevo</option>
+                            <option value="Usado">Usado</option>
+                            <option value="Reacondicionado">Reacondicionado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="envioGratis" name="envioGratis">
+                        Envío gratis
+                    </label>
+                </div>
+
+                <div id="errorMessage" class="error-message" style="display: none;"></div>
+                <div id="successMessage" class="success-message" style="display: none;"></div>
+
+                <button type="submit" class="btn-submit">Publicar producto</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="product-form.js"></script>
+</body>
+</html>
+

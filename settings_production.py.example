@@ -1,0 +1,39 @@
+"""
+Configuración de ejemplo para PostgreSQL en producción
+Copia este archivo y renómbralo según necesites, o agrega estas configuraciones a settings.py
+"""
+
+# Para usar PostgreSQL, descomenta y configura esto en settings.py:
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': config('DB_NAME', default='mandale_db'),
+#         'USER': config('DB_USER', default='mandale_user'),
+#         'PASSWORD': config('DB_PASSWORD', default=''),
+#         'HOST': config('DB_HOST', default='localhost'),
+#         'PORT': config('DB_PORT', default='5432'),
+#         'OPTIONS': {
+#             'connect_timeout': 10,
+#         },
+#     }
+# }
+
+# Variables de entorno recomendadas (.env):
+# DB_NAME=mandale_db
+# DB_USER=mandale_user
+# DB_PASSWORD=tu_password_seguro
+# DB_HOST=localhost
+# DB_PORT=5432
+
+# Para usar con servicios cloud (ejemplo Heroku):
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ.get('DATABASE_NAME'),
+#         'USER': os.environ.get('DATABASE_USER'),
+#         'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+#         'HOST': os.environ.get('DATABASE_HOST'),
+#         'PORT': os.environ.get('DATABASE_PORT', '5432'),
+#     }
+# }
