@@ -1,6 +1,3 @@
-# marketplace-platform
-Full-stack marketplace platform with authentication, product management and wallet integration. Built with Node.js, Express and MongoDB.
-
 # Marketplace Platform - Full Stack Application
 
 Full-stack e-commerce marketplace system with authentication, product management and virtual wallet integration.
